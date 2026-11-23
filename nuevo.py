@@ -1,1 +1,0 @@
-print("Hola me gusta usar este programa y prramar en C# se me esta complcando un poco")
