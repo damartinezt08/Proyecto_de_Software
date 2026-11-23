@@ -1,5 +1,5 @@
 
-from inventario import Inventario
+from src.inventario import Inventario
 
 
 class ModuloPronostico:

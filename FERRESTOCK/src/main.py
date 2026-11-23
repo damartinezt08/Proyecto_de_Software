@@ -2,10 +2,10 @@
 # Nivel: Principiante Puro (Sin formato avanzado, solo print, input, if/else)
 #  Menú principal que orquesta los módulos del sistema FerreStock.
 
-from inventario import Inventario
-from ventas import ModuloVentas
-from compras import ModuloCompras
-from pronostico import ModuloPronostico
+from src.inventario import Inventario
+from src.ventas import ModuloVentas
+from src.compras import ModuloCompras
+from src.pronostico import ModuloPronostico
 
 
 def menu():

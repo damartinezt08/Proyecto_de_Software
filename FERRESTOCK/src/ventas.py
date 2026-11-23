@@ -2,7 +2,7 @@
 # Registra las ventas y la demanda no atendida (demanda real).
 
 
-from inventario import Inventario
+from src.inventario import Inventario
 
 
 class ModuloVentas:

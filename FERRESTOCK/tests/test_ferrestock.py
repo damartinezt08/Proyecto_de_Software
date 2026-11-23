@@ -5,10 +5,10 @@ import sys
 # Conectar con los módulos del proyecto
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from inventario import Inventario
-from ventas import ModuloVentas
-from compras import ModuloCompras
-from pronostico import ModuloPronostico
+from src.inventario import Inventario
+from src.ventas import ModuloVentas
+from src.compras import ModuloCompras
+from src.pronostico import ModuloPronostico
 
 
 def nuevo_inventario():
