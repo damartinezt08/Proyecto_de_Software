@@ -1,6 +1,224 @@
 {
-    "productos": {},
-    "ventas": [],
-    "pedidos_pendientes": [],
-    "entregas_completadas": []
+    "productos": {
+        "CEM-01": {
+            "codigo": "CEM-01",
+            "nombre": "Cemento Gris 42.5kg",
+            "tipo_medida": "peso",
+            "precio": 9.5,
+            "costo": 7.2,
+            "stock": 80.0
+        },
+        "CAL-01": {
+            "codigo": "CAL-01",
+            "nombre": "Cal Hidratada 20kg",
+            "tipo_medida": "peso",
+            "precio": 3.5,
+            "costo": 2.2,
+            "stock": 40.0
+        },
+        "ARE-01": {
+            "codigo": "ARE-01",
+            "nombre": "Arena de Río (m3/kg)",
+            "tipo_medida": "peso",
+            "precio": 18.0,
+            "costo": 12.0,
+            "stock": 15.0
+        },
+        "GRA-01": {
+            "codigo": "GRA-01",
+            "nombre": "Grava Triturada (m3/kg)",
+            "tipo_medida": "peso",
+            "precio": 22.0,
+            "costo": 15.0,
+            "stock": 10.0
+        },
+        "CLA-01": {
+            "codigo": "CLA-01",
+            "nombre": "Clavo Corriente 2.5 (lb)",
+            "tipo_medida": "peso",
+            "precio": 1.25,
+            "costo": 0.8,
+            "stock": 65.5
+        },
+        "CLA-02": {
+            "codigo": "CLA-02",
+            "nombre": "Clavo para Concreto 2 (lb)",
+            "tipo_medida": "peso",
+            "precio": 1.75,
+            "costo": 1.1,
+            "stock": 30.0
+        },
+        "ALAM-01": {
+            "codigo": "ALAM-01",
+            "nombre": "Alambre de Amarre (lb)",
+            "tipo_medida": "peso",
+            "precio": 1.4,
+            "costo": 0.9,
+            "stock": 50.0
+        },
+        "MAR-01": {
+            "codigo": "MAR-01",
+            "nombre": "Martillo de Uña 16oz",
+            "tipo_medida": "entero",
+            "precio": 8.5,
+            "costo": 5.2,
+            "stock": 18
+        },
+        "MAR-02": {
+            "codigo": "MAR-02",
+            "nombre": "Combo 4lb Mango Fibra",
+            "tipo_medida": "entero",
+            "precio": 14.0,
+            "costo": 9.0,
+            "stock": 8
+        },
+        "PAL-01": {
+            "codigo": "PAL-01",
+            "nombre": "Pala Redonda Mango Largo",
+            "tipo_medida": "entero",
+            "precio": 12.5,
+            "costo": 8.0,
+            "stock": 12
+        },
+        "PAL-02": {
+            "codigo": "PAL-02",
+            "nombre": "Pala Cuadrada Carbonera",
+            "tipo_medida": "entero",
+            "precio": 13.0,
+            "costo": 8.5,
+            "stock": 10
+        },
+        "CAR-01": {
+            "codigo": "CAR-01",
+            "nombre": "Carretilla 5.5 pies3",
+            "tipo_medida": "entero",
+            "precio": 58.0,
+            "costo": 42.0,
+            "stock": 6
+        },
+        "SER-01": {
+            "codigo": "SER-01",
+            "nombre": "Serrucho Carpintero 20",
+            "tipo_medida": "entero",
+            "precio": 7.5,
+            "costo": 4.8,
+            "stock": 14
+        },
+        "PIN-01": {
+            "codigo": "PIN-01",
+            "nombre": "Pintura Blanca 1 Galon",
+            "tipo_medida": "entero",
+            "precio": 16.5,
+            "costo": 11.0,
+            "stock": 25
+        },
+        "PIN-02": {
+            "codigo": "PIN-02",
+            "nombre": "Pintura Anticorrosiva Gris",
+            "tipo_medida": "entero",
+            "precio": 21.0,
+            "costo": 14.5,
+            "stock": 16
+        },
+        "BRO-01": {
+            "codigo": "BRO-01",
+            "nombre": "Brocha para Pintar 3",
+            "tipo_medida": "entero",
+            "precio": 2.75,
+            "costo": 1.5,
+            "stock": 35
+        },
+        "TUB-01": {
+            "codigo": "TUB-01",
+            "nombre": "Tubo PVC 1/2 pulg 250PSI",
+            "tipo_medida": "entero",
+            "precio": 4.25,
+            "costo": 2.8,
+            "stock": 45
+        },
+        "TUB-02": {
+            "codigo": "TUB-02",
+            "nombre": "Tubo PVC 2 pulg Drenaje",
+            "tipo_medida": "entero",
+            "precio": 8.9,
+            "costo": 6.0,
+            "stock": 20
+        },
+        "CIN-01": {
+            "codigo": "CIN-01",
+            "nombre": "Cinta Metrica 5 metros",
+            "tipo_medida": "entero",
+            "precio": 4.5,
+            "costo": 2.6,
+            "stock": 22
+        },
+        "ALI-01": {
+            "codigo": "ALI-01",
+            "nombre": "Alicate Universal 8 pulg",
+            "tipo_medida": "entero",
+            "precio": 6.5,
+            "costo": 4.0,
+            "stock": 15
+        }
+    },
+    "ventas": [
+        {
+            "id": 1,
+            "codigo": "CEM-01",
+            "tipo_medida": "peso",
+            "solicitadas": 10.0,
+            "vendidas": 10.0,
+            "no_atendidas": 0.0,
+            "demanda_total": 10.0
+        },
+        {
+            "id": 2,
+            "codigo": "CEM-01",
+            "tipo_medida": "peso",
+            "solicitadas": 15.0,
+            "vendidas": 15.0,
+            "no_atendidas": 0.0,
+            "demanda_total": 15.0
+        },
+        {
+            "id": 3,
+            "codigo": "MAR-01",
+            "tipo_medida": "entero",
+            "solicitadas": 4,
+            "vendidas": 4,
+            "no_atendidas": 0,
+            "demanda_total": 4
+        },
+        {
+            "id": 4,
+            "codigo": "MAR-01",
+            "tipo_medida": "entero",
+            "solicitadas": 6,
+            "vendidas": 6,
+            "no_atendidas": 0,
+            "demanda_total": 6
+        }
+    ],
+    "pedidos_pendientes": [
+        {
+            "id_pedido": 1,
+            "codigo": "CAR-01",
+            "tipo_medida": "entero",
+            "proveedor": "Distribuidora Cuscatlan",
+            "cantidad_pedida": 10,
+            "costo": 42.0
+        }
+    ],
+    "entregas_completadas": [
+        {
+            "id_pedido": 99,
+            "codigo": "CEM-01",
+            "tipo_medida": "peso",
+            "proveedor": "Holcim El Salvador",
+            "dias_entrega_L": 3,
+            "cantidad_pedida": 50.0,
+            "cantidad_recibida": 50.0,
+            "fill_rate": 1.0
+        }
+    ]
 }
