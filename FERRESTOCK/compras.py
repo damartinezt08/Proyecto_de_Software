@@ -1,4 +1,3 @@
-# compras.py
 # Registra órdenes de compra ("en tránsito") y recepciones con Lead Time L.
 
 from inventario import Inventario

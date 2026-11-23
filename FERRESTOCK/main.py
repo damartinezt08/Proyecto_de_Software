@@ -1,4 +1,3 @@
-# main.py
 
 # Nivel: Principiante Puro (Sin formato avanzado, solo print, input, if/else)
 #  Menú principal que orquesta los módulos del sistema FerreStock.
@@ -18,7 +17,7 @@ def menu():
 
     while True:
         print(" FERRESTOCK - MENÚ PRINCIPAL")
-    
+
         print("1. MÓDULO D Registrar nuevo producto")
         print("2. MÓDULO D Ver catálogo y stock")
         print("3. MÓDULO B Registrar venta (Demanda real)")
@@ -29,9 +28,8 @@ def menu():
         opcion = input("Seleccione una opción (1-7): ").strip()
 
         try:
-            
             # Opcion 1: Registrar producto (Módulo D)
-            
+
             if opcion == "1":
                 cod = input("Código (ej. P-01): ").strip()
                 nom = input("Nombre o descripción: ").strip()
@@ -51,9 +49,8 @@ def menu():
                 p = inventario.registrar_producto(cod, nom, pre, cos, stk, tipo)
                 print("[OK] Producto guardado: " + p.codigo + " - " + p.nombre + " (" + p.tipo_medida + ") | Stock: " + str(p.stock))
 
-            
             # Opcion 2: Consultar catálogo de productos (Módulo D)
-           
+
             elif opcion == "2":
                 print(" CATÁLOGO DE PRODUCTOS EN BODEGA")
                 if len(inventario.productos) == 0:
@@ -71,9 +68,8 @@ def menu():
                         print("    ---------------------------------------------------")
                 input("\nPresione Enter para volver al menú principal...")
 
-            
             # Opcion 3: Registrar venta (Módulo B)
-            
+
             elif opcion == "3":
                 cod = input("Código de producto a vender: ").strip()
                 p = inventario.buscar_producto(cod)
@@ -91,9 +87,8 @@ def menu():
                 print("  Demanda real total : " + str(v["demanda_total"]))
                 print("  Stock restante     : " + str(inventario.consultar_stock(cod)))
 
-            
             # Opcion 4: Crear orden de compra (Módulo A)
-            
+
             elif opcion == "4":
                 cod = input("Código de producto: ").strip()
                 p = inventario.buscar_producto(cod)
@@ -104,9 +99,8 @@ def menu():
                 o = compras.ingresar_orden_compra(cod, prov, cant, cos)
                 print("[OK] Orden #" + str(o["id_pedido"]) + " creada en estado 'en tránsito'.")
 
-            
             # Opcion 5: Recibir pedido del proveedor (Módulo A)
-            
+
             elif opcion == "5":
                 if len(inventario.pedidos_pendientes) == 0:
                     print("[AVISO] No hay pedidos pendientes en tránsito.")
@@ -127,9 +121,8 @@ def menu():
                 print("  Nuevo stock en bodega    : " + str(inventario.consultar_stock(entrega["codigo"])))
                 print("  Demora promedio proveedor: " + str(prom_l) + " días")
 
-            
             # Opcion 6: Pronóstico y Reabastecimiento Min-Max (Módulo C)
-            
+
             elif opcion == "6":
                 if len(inventario.productos) == 0:
                     print("AVISO No hay productos en el inventario.")
@@ -154,17 +147,15 @@ def menu():
                 else:
                     medida = "unidades"
 
-                
                 print("REPORTE DE REABASTECIMIENTO: " + res["codigo"] + " - " + res["nombre"])
-    
+
                 print("  Venta promedio diaria  : " + str(res["venta_diaria"]) + " " + medida + "/día")
                 print("  Stock actual en bodega : " + str(res["stock_bodega"]) + " " + medida)
                 print("  Pedidos en camino      : " + str(res["pedidos_en_camino"]) + " " + medida)
                 print("  Stock total disponible : " + str(res["stock_disponible"]) + " " + medida)
-                
+
                 print("  Stock MÍNIMO (Alerta)  : " + str(res["stock_minimo"]) + " " + medida)
                 print("  Stock MÁXIMO (Meta)    : " + str(res["stock_maximo"]) + " " + medida)
-                
 
                 if res["alerta_reorden"] == True:
                     print(" ESTADO: ¡ALERTA! El stock está por debajo del MÍNIMO.")
@@ -172,11 +163,9 @@ def menu():
                     print("Inversión estimada $: " + str(res["costo_estimado"]))
                 else:
                     print(" ESTADO: Stock suficiente. No hace falta pedir hoy.")
-                
 
-            
             # Opcion 7: Salir del programa
-            
+
             elif opcion == "7":
                 print("Cerrando el sistema FerreStock")
                 break
